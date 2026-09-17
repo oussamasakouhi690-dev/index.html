@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hannibal Bakery Sweet</title>
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f8f0e4;
+    color: #4b0b16;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    height: 80px;
+
+    background: #4b0713;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    text-decoration: none;
+
+    color: white;
+}
+
+
+.logo-circle {
+    width: 52px;
+    height: 52px;
+
+    border: 2px solid #d7aa52;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 28px;
+
+    color: #d7aa52;
+}
+
+
+.logo-text h2 {
+    font-family: "Playfair Display", serif;
+
+    letter-spacing: 4px;
+
+    font-size: 18px;
+}
+
+
+.logo-text span {
+    color: #d7aa52;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+}
+
+
+.navbar {
+    display: flex;
+
+    gap: 35px;
+}
+
+
+.navbar a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+.navbar a:hover {
+    color: #d7aa52;
+}
+
+
+.header-icons {
+    display: flex;
+
+    gap: 15px;
+}
+
+
+.header-icons button {
+    background: transparent;
+
+    border: none;
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+
+#cartButton {
+    position: relative;
+}
+
+
+#cartCount {
+    position: absolute;
+
+    top: -8px;
+    right: -8px;
+
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+
+    background: #d7aa52;
+
+    color: #4b0713;
+
+    font-size: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.mobile-menu {
+    display: none;
+
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    font-size: 25px;
+}
+
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 650px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #27060b,
+            #4b0b13 50%,
+            #74331d
+        );
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 70px 9%;
+
+    overflow: hidden;
+}
+
+
+.hero-content {
+    width: 50%;
+
+    z-index: 2;
+}
+
+
+.hero-category {
+    color: #d7aa52;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 25px;
+}
+
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 72px;
+
+    line-height: 1;
+
+    font-weight: 600;
+}
+
+
+.hero h1 span {
+    display: block;
+
+    color: #dfb75e;
+
+    font-style: italic;
+}
+
+
+.gold-line {
+    width: 50px;
+    height: 2px;
+
+    background: #d7aa52;
+
+    margin: 25px 0;
+}
+
+
+.hero-description {
+    max-width: 500px;
+
+    color: #ddd;
+
+    line-height: 1.8;
+
+    font-size: 14px;
+}
+
+
+.hero-buttons {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+
+.main-btn,
+.second-btn {
+    padding: 15px 25px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+.main-btn {
+    background: #8a1729;
+
+    color: white;
+
+    border: 1px solid #d7aa52;
+}
+
+
+.main-btn:hover {
+    background: #a51d32;
+}
+
+
+.second-btn {
+    border: 1px solid #d7aa52;
+
+    color: white;
+}
+
+
+.second-btn:hover {
+    background: #d7aa52;
+
+    color: #4b0713;
+}
+
+
+.hero-image {
+    width: 50%;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.hero-image img {
+    width: 530px;
+    height: 530px;
+
+    object-fit: cover;
+
+    border-radius: 50% 50% 20px 20px;
+
+    box-shadow: 0 25px 50px #0008;
+}
+
+
+
+/* ================= MENU ================= */
+
+.menu-section {
+    padding: 90px 9%;
+}
+
+
+.section-heading {
+    margin-bottom: 40px;
+}
+
+
+.section-heading p {
+    color: #a87929;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+}
+
+
+.section-heading h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 43px;
+
+    margin-top: 8px;
+}
+
+
+.products {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+
+.product-card {
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px #00000012;
+
+    transition: 0.3s;
+}
+
+
+.product-card:hover {
+    transform: translateY(-8px);
+}
+
+
+.product-image {
+    height: 230px;
+
+    overflow: hidden;
+}
+
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+
+.product-card:hover img {
+    transform: scale(1.08);
+}
+
+
+.product-info {
+    padding: 18px;
+}
+
+
+.product-info h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 21px;
+}
+
+
+.product-info p {
+    color: #777;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    margin: 8px 0 15px;
+}
+
+
+.product-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.product-bottom strong {
+    color: #801225;
+}
+
+
+.product-bottom button {
+    border: none;
+
+    background: #780e20;
+
+    color: white;
+
+    padding: 9px 16px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+
+.product-bottom button:hover {
+    background: #a31b30;
+}
+
+
+
+/* ================= ABOUT ================= */
+
+.about-section {
+    display: flex;
+
+    min-height: 500px;
+
+    background: #eee0ca;
+}
+
+
+.about-image {
+    width: 50%;
+}
+
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.about-content {
+    width: 50%;
+
+    padding: 80px;
+}
+
+
+.about-content > p:first-child {
+    color: #a87929;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+}
+
+
+.about-content h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 45px;
+
+    margin: 15px 0;
+}
+
+
+.about-content h2 span {
+    display: block;
+
+    color: #a87929;
+
+    font-style: italic;
+}
+
+
+.small-line {
+    width: 45px;
+    height: 2px;
+
+    background: #b88b36;
+
+    margin: 20px 0;
+}
+
+
+.about-text {
+    color: #666;
+
+    line-height: 1.8;
+
+    font-size: 14px;
+}
+
+
+.outline-btn {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 12px 25px;
+
+    border: 1px solid #780e20;
+
+    border-radius: 25px;
+
+    color: #780e20;
+
+    text-decoration: none;
+}
+
+
+.outline-btn:hover {
+    background: #780e20;
+
+    color: white;
+}
+
+
+
+/* ================= GALLERY ================= */
+
+.gallery-section {
+    padding: 90px 9%;
+}
+
+
+.gallery {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 12px;
+}
+
+
+.gallery-item {
+    height: 250px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+
+
+/* ================= CONTACT ================= */
+
+.contact-section {
+    padding: 70px 9%;
+
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr;
+
+    gap: 50px;
+
+    background: #f0e3d1;
+}
+
+
+.contact-info > p {
+    color: #a87929;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+}
+
+
+.contact-info h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 45px;
+
+    max-width: 500px;
+
+    margin: 15px 0 30px;
+}
+
+
+.contact-details {
+    display: flex;
+
+    gap: 40px;
+}
+
+
+.contact-details strong {
+    font-size: 13px;
+}
+
+
+.contact-details p {
+    color: #777;
+
+    font-size: 12px;
+
+    margin-top: 5px;
+}
+
+
+.order-box {
+    background: #620b1b;
+
+    color: white;
+
+    border-radius: 15px;
+
+    padding: 40px;
+}
+
+
+.order-box span {
+    color: #d7aa52;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+}
+
+
+.order-box h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 28px;
+
+    margin: 20px 0;
+}
+
+
+.order-box button {
+    border: none;
+
+    background: #d7aa52;
+
+    color: #4b0713;
+
+    padding: 13px 25px;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+}
+
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #450712;
+
+    color: white;
+
+    padding: 35px 9%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.footer-logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.footer-logo h2 {
+    font-family: "Playfair Display", serif;
+
+    letter-spacing: 3px;
+
+    font-size: 17px;
+}
+
+
+.footer-logo span {
+    color: #d7aa52;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+}
+
+
+.footer-links {
+    display: flex;
+
+    gap: 25px;
+}
+
+
+.footer-links a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 12px;
+}
+
+
+footer > p {
+    color: #bdaaa0;
+
+    font-size: 11px;
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        gap: 15px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .hero-image img {
+        width: 400px;
+        height: 400px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .navbar,
+    .header-icons {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 70px 6%;
+    }
+
+
+    .hero-content,
+    .hero-image {
+        width: 100%;
+    }
+
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+
+    .hero-image {
+        margin-top: 40px;
+    }
+
+
+    .hero-image img {
+        width: 330px;
+        height: 330px;
+    }
+
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+
+    .about-section {
+        flex-direction: column;
+    }
+
+
+    .about-image,
+    .about-content {
+        width: 100%;
+    }
+
+
+    .about-image {
+        height: 350px;
+    }
+
+
+    .about-content {
+        padding: 50px 7%;
+    }
+
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+
+
+    .contact-details {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    footer {
+        flex-direction: column;
+
+        gap: 25px;
+
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+
+    .section-heading h2 {
+        font-size: 35px;
+    }
+
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+
+    .gallery-item {
+        height: 280px;
+    }
+
+}
+        </style>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <a href="#" class="logo">
+
+            <div class="logo-circle">
+                H
+            </div>
+
+            <div class="logo-text">
+                <h2>HANNIBAL</h2>
+                <span>BAKERY SWEET</span>
+            </div>
+
+        </a>
+
+
+        <nav class="navbar">
+
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+
+        <div class="header-icons">
+
+            <button>⌕</button>
+
+            <button id="cartButton">
+                🛒
+                <span id="cartCount">0</span>
+            </button>
+
+        </div>
+
+
+        <button class="mobile-menu" id="mobileMenu">
+            ☰
+        </button>
+
+    </header>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="hero-category">
+                DESSERTS • BAKERY • MILKSHAKES • WAFFLES
+            </p>
+
+            <h1>
+                Taste the
+                <span>Mediterranean</span>
+            </h1>
+
+            <div class="gold-line"></div>
+
+            <p class="hero-description">
+
+                Traditional recipes, modern flavors.
+                A sweet journey inspired by the Mediterranean
+                and the rich heritage of Carthage.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="#menu" class="main-btn">
+                    Discover our menu →
+                </a>
+
+                <a href="#contact" class="second-btn">
+                    Order now
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <img
+                src="Screenshot 2026-09-17 211916.png"
+                alt="Delicious dessert">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= MENU ================= -->
+
+    <section class="menu-section" id="menu">
+
+        <div class="section-heading">
+
+            <p>OUR BEST SELLERS</p>
+
+            <h2>
+                Popular Desserts
+            </h2>
+
+        </div>
+
+
+        <div class="products">
+
+
+            <!-- PRODUCT 1 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=700&q=85"
+                        alt="Milkshake">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Oreo Milkshake</h3>
+
+                    <p>
+                        Creamy milkshake with Oreo cookies
+                        and whipped cream.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>5.500 TND</strong>
+
+                        <button onclick="addToCart('Oreo Milkshake')">
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCT 2 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=700&q=85"
+                        alt="Waffle">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Special Waffle</h3>
+
+                    <p>
+                        Fresh waffle with chocolate,
+                        fruits and special sauce.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>6.500 TND</strong>
+
+                        <button onclick="addToCart('Special Waffle')">
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCT 3 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=85"
+                        alt="Ice cream">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Ice Cream Cup</h3>
+
+                    <p>
+                        Creamy ice cream with toppings,
+                        fruits and chocolate.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>5.000 TND</strong>
+
+                        <button onclick="addToCart('Ice Cream Cup')">
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCT 4 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=85"
+                        alt="Croissant">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Pistachio Croissant</h3>
+
+                    <p>
+                        Freshly baked croissant with
+                        pistachio and chocolate.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>4.000 TND</strong>
+
+                        <button onclick="addToCart('Pistachio Croissant')">
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about-section" id="about">
+
+        <div class="about-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=85"
+                alt="Bakery">
+
+        </div>
+
+
+        <div class="about-content">
+
+            <p>OUR STORY</p>
+
+            <h2>
+                A Tunisian Heritage,
+                <span>A Sweet Passion</span>
+            </h2>
+
+            <div class="small-line"></div>
+
+            <p class="about-text">
+
+                Hannibal Bakery Sweet combines the authentic
+                taste of Tunisian bakery with modern,
+                creative desserts.
+
+                Inspired by the Mediterranean and the
+                rich heritage of Carthage.
+
+            </p>
+
+            <a href="#contact" class="outline-btn">
+                Learn more →
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= GALLERY ================= -->
+
+    <section class="gallery-section" id="gallery">
+
+        <div class="section-heading">
+
+            <p>OUR GALLERY</p>
+
+            <h2>
+                Sweet Moments
+            </h2>
+
+        </div>
+
+
+        <div class="gallery">
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=85"
+                    alt="Dessert">
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=700&q=85"
+                    alt="Waffle">
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=700&q=85"
+                    alt="Milkshake">
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=85"
+                    alt="Croissant">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact-section" id="contact">
+
+        <div class="contact-info">
+
+            <p>COME VISIT US</p>
+
+            <h2>
+                Let's make your
+                day sweeter.
+            </h2>
+
+            <div class="contact-details">
+
+                <div>
+                    <strong>📍 Location</strong>
+                    <p>Tunis, Tunisia</p>
+                </div>
+
+                <div>
+                    <strong>📞 Phone</strong>
+                    <p>+216 XX XXX XXX</p>
+                </div>
+
+                <div>
+                    <strong>🕐 Opening Hours</strong>
+                    <p>Every day — 08:00 / 23:00</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="order-box">
+
+            <span>ONLINE ORDER</span>
+
+            <h3>
+                Your favorite dessert
+                is waiting for you.
+            </h3>
+
+            <button onclick="orderNow()">
+                Order now →
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            <div class="logo-circle">
+                H
+            </div>
+
+            <div>
+
+                <h2>HANNIBAL</h2>
+
+                <span>
+                    BAKERY SWEET
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+
+        </div>
+
+
+        <p>
+            © 2026 Hannibal Bakery Sweet
+        </p>
+
+    </footer>
+
+
+
+    <script>
+        let cart = [];
+
+function addToCart(productName) {
+
+    cart.push(productName);
+
+    document.getElementById("cartCount").textContent = cart.length;
+
+    alert(productName + " added to cart 🛒");
+
+}
+
+
+function orderNow() {
+
+    alert(
+        "Thank you for choosing Hannibal Bakery Sweet ❤️\n\n" +
+        "Contact us to place your order."
+    );
+
+}
+
+
+const mobileMenu = document.getElementById("mobileMenu");
+
+const navbar = document.querySelector(".navbar");
+
+
+mobileMenu.addEventListener("click", function () {
+
+    if (navbar.style.display === "flex") {
+
+        navbar.style.display = "none";
+
+    } else {
+
+        navbar.style.display = "flex";
+
+        navbar.style.flexDirection = "column";
+
+        navbar.style.position = "absolute";
+
+        navbar.style.top = "80px";
+
+        navbar.style.left = "0";
+
+        navbar.style.width = "100%";
+
+        navbar.style.background = "#4b0713";
+
+        navbar.style.padding = "25px";
+
+    }
+
+});
+    </script>
+
+</body>
+
+</html>
